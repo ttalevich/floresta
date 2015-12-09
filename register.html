@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Floresta - Template</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="typeface/fonts.css" rel="stylesheet">
+    <!--link rel="stylesheet" href="http://basehold.it/24"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+</head>
+<body>
+    
+    
+<!--begin inner nav styling --> 
+<div id="nav-mobile-logo">
+    <img src="images/logo-mobile.png">
+</div>
+<div id="red"></div>
+<div id="green"></div>
+<div id="nav-mobile-header"></div>
+<div id="nav-mobile">
+    <ul>
+        <li>
+            <a href="#">About</a>
+        </li>
+        <li>
+            <a href="#">Features</a>
+            <ul class="sub-menu">
+                <li><a href="#">Floorplans</a></li>
+                <li><a href="#">Premises</a></li>
+            </ul>
+            <ul class="nav-mobile-sub">
+                <li><a href="#">Floorplans</a></li>
+                <li><a href="#">Premises</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Location</a>
+            <ul class="sub-menu">
+                <li><a href="#">Neighborhood</a></li>
+                <li><a href="#">Town</a></li>
+                <li><a href="#">Activities</a></li>
+            </ul>
+            <ul class="nav-mobile-sub">
+                <li><a href="#">Neighborhood</a></li>
+                <li><a href="#">Town</a></li>
+                <li><a href="#">Activities</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="availability.html">Availability</a>
+            <ul class="sub-menu">
+                <li><a href="timeframe.html">Timeframe</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Registration</a></li>
+            </ul>
+            <ul class="nav-mobile-sub">
+                <li><a href="timeframe.html">- Timeframe</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="availability.html">Availability</a></li>
+            </ul> <!--DO PHP TO MAKE THESE DISPLAY DYNAMICALLY -->
+        </li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+     
+</div>
+    
+    
+<div id="nav" class="nav">
+    <div class="inner-nav">
+        <a href="index.html"><img class="logo-inner" src="images/floresta-logo-inner.png" alt="Floresta logo"/></a>
+    </div>
+    <div id="nav-wrapper" class="nav-wrapper">
+        <ul class="clearfix">
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#/">Features</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Floorplans</a></li>
+                    <li><a href="#">Premises</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#/">Location</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Neighborhood</a></li>
+                    <li><a href="#">Town</a></li>
+                    <li><a href="#">Activities</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="availability.html">Availability</a>
+                <ul class="sub-menu">
+                    <li><a href="timeframe.html">Timeframe</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Registration</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>    
+</div>
+<!--end nav styling -->
+
+
+<!--begin page content area -->
+<div id="content">
+    <div id="aside">
+        <ul>
+            <li><a href="timeframe.html">Timeframe</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="availability.html" class="return">Availability</a></li>
+        </ul>
+    </div>
+    <div id="main" class="inner">
+        <h1>Register &amp; Reserve</h1>
+        <p>At this time -  any registration is an inquiry, not a promise.</p>
+        <div id="contact-form">
+            <form action="form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email">
+
+                <label for="move-in">Move in date:</label>
+                <input type="date" name="move-in">
+                
+                <label for="comments">Comments</label>
+                <textarea name="comments"></textarea>
+                <button type="submit" name="sumbit">SUBMIT</button>
+            </form>
+        </div>
+        
+        <p class="lower">If you have any questions or concerns please  <a href="contact.html">Contact</a> us.</p>
+    </div>
+</div>
+<!--end page content area -->
+
+<!--begin footer area -->
+<div id="footer-wrapper">
+    <div id="footer">
+        <ul>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Features</a>
+                <ul class="">
+                    <li><a href="#">Floorplans</a></li>
+                    <li><a href="#">Premises</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Location</a>
+                <ul class="">
+                    <li><a href="#">Neighborhood</a></li>
+                    <li><a href="#">Town</a></li>
+                    <li><a href="#">Activities</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Availability</a>
+                <ul class="">
+                    <li><a href="#">Timeframe</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Registration</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div id="copywrap">
+            <span><a href="index.php"><img src="images/logo-footer.png"/></a><p>&copy; 2015</p></span>
+        </div>
+    </div>    
+</div>
+    
+<div id="mobile-footer">
+    <ul>
+        <li>
+            <a href="#">About</a>
+        </li>
+        <li>
+            <a href="#" class="mobile-toggle">Features</a>
+            <div class="mobile-sub">
+                <ul>
+                    <li><a href="#">Floorplans</a></li>
+                    <li><a href="#">Premises</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="#" class="mobile-toggle">Location</a>
+            <div class="mobile-sub">
+                <ul>
+                    <li><a href="#">Neighborhood</a></li>
+                    <li><a href="#">Town</a></li>
+                    <li><a href="#">Activities</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="#" class="mobile-toggle">Availability</a>
+            <div class="mobile-sub">
+                <ul>
+                    <li><a href="#">Timeframe</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Registration</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+<div id="footer-3d"> 
+    </div>
+<!--  end footer area -->
+</body>
+</html>
